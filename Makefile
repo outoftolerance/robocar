@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named robocar
+
+# Build rule for target.
+robocar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robocar
+.PHONY : robocar
+
+# fast build rule for target.
+robocar/fast:
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/build
+.PHONY : robocar/fast
+
+#=============================================================================
 # Target rules for targets named camera
 
 # Build rule for target.
@@ -123,32 +136,59 @@ camera/fast:
 	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
 .PHONY : camera/fast
 
-camera.o: camera.cpp.o
+include/camera.o: include/camera.cpp.o
 
-.PHONY : camera.o
+.PHONY : include/camera.o
 
 # target to build an object file
-camera.cpp.o:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/camera.cpp.o
-.PHONY : camera.cpp.o
+include/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.o
+.PHONY : include/camera.cpp.o
 
-camera.i: camera.cpp.i
+include/camera.i: include/camera.cpp.i
 
-.PHONY : camera.i
+.PHONY : include/camera.i
 
 # target to preprocess a source file
-camera.cpp.i:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/camera.cpp.i
-.PHONY : camera.cpp.i
+include/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.i
+.PHONY : include/camera.cpp.i
 
-camera.s: camera.cpp.s
+include/camera.s: include/camera.cpp.s
 
-.PHONY : camera.s
+.PHONY : include/camera.s
 
 # target to generate assembly for a file
-camera.cpp.s:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/camera.cpp.s
-.PHONY : camera.cpp.s
+include/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.s
+.PHONY : include/camera.cpp.s
+
+robocar.o: robocar.cpp.o
+
+.PHONY : robocar.o
+
+# target to build an object file
+robocar.cpp.o:
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/robocar.cpp.o
+.PHONY : robocar.cpp.o
+
+robocar.i: robocar.cpp.i
+
+.PHONY : robocar.i
+
+# target to preprocess a source file
+robocar.cpp.i:
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/robocar.cpp.i
+.PHONY : robocar.cpp.i
+
+robocar.s: robocar.cpp.s
+
+.PHONY : robocar.s
+
+# target to generate assembly for a file
+robocar.cpp.s:
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/robocar.cpp.s
+.PHONY : robocar.cpp.s
 
 # Help Target
 help:
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... robocar"
 	@echo "... camera"
-	@echo "... camera.o"
-	@echo "... camera.i"
-	@echo "... camera.s"
+	@echo "... include/camera.o"
+	@echo "... include/camera.i"
+	@echo "... include/camera.s"
+	@echo "... robocar.o"
+	@echo "... robocar.i"
+	@echo "... robocar.s"
 .PHONY : help
 
 

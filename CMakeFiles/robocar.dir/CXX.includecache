@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/james/Documents/robocar/include/camera.hpp
+opencv2/opencv.hpp
+-
+
+/home/james/Documents/robocar/robocar.cpp
+iostream
+-
+opencv2/opencv.hpp
+-
+include/camera.hpp
+/home/james/Documents/robocar/include/camera.hpp
+

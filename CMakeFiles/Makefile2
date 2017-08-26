@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/james/Documents/robocar
 CMAKE_BINARY_DIR = /home/james/Documents/robocar
 
 #=============================================================================
+# Target rules for target CMakeFiles/robocar.dir
+
+# All Build rule for target.
+CMakeFiles/robocar.dir/all: CMakeFiles/camera.dir/all
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/depend
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=3,4 "Built target robocar"
+.PHONY : CMakeFiles/robocar.dir/all
+
+# Include target in all.
+all: CMakeFiles/robocar.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robocar.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/robocar/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robocar.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/robocar/CMakeFiles 0
+.PHONY : CMakeFiles/robocar.dir/rule
+
+# Convenience name for target.
+robocar: CMakeFiles/robocar.dir/rule
+
+.PHONY : robocar
+
+# clean rule for target.
+CMakeFiles/robocar.dir/clean:
+	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/clean
+.PHONY : CMakeFiles/robocar.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/robocar.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/camera.dir
 
 # All Build rule for target.

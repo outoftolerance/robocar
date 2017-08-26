@@ -114,7 +114,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=camera
+CMAKE_PROJECT_NAME:STATIC=robocar
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -182,11 +182,14 @@ OpenCV_LIB_DIR_DBG:PATH=
 //Path where release OpenCV libraries are located
 OpenCV_LIB_DIR_OPT:PATH=
 
-//Value Computed by CMake
-camera_BINARY_DIR:STATIC=/home/james/Documents/robocar
+//Dependencies for target
+camera_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-camera_SOURCE_DIR:STATIC=/home/james/Documents/robocar
+robocar_BINARY_DIR:STATIC=/home/james/Documents/robocar
+
+//Value Computed by CMake
+robocar_SOURCE_DIR:STATIC=/home/james/Documents/robocar
 
 
 ########################
