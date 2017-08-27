@@ -41,7 +41,7 @@ bool Capture::init(int device_number, int width, int height)
  * Initializes the library
  * Sets device and image resolution
  */
-bool Capture::init(char* filename)
+bool Capture::init(const char* filename)
 {
 	std::cout << "Loading video file" << std::endl;
 	//std::cout << "Filepath: " << filename << std::endl;
@@ -76,4 +76,22 @@ bool Capture::getFrame(cv::Mat &frame)
 	frame = tmp;
 
 	return true;
+}
+
+/*
+ * Gets width of current capture object
+ */
+bool Capture::getWidth(int &width)
+{
+	width = (int)_capture->get(CV_CAP_PROP_FRAME_WIDTH);
+	return 1;
+}
+
+/*
+ * Gets height of currept caputre object
+ */
+bool Capture::getHeight(int &height)
+{
+	height = (int)_capture->get(CV_CAP_PROP_FRAME_HEIGHT);
+	return 1;
 }

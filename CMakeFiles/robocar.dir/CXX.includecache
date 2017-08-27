@@ -15,6 +15,14 @@ opencv2/opencv.hpp
 /home/james/Documents/robocar/robocar.cpp
 iostream
 -
+unistd.h
+-
+stdio.h
+-
+string
+-
+sstream
+-
 opencv2/opencv.hpp
 -
 include/capture/capture.hpp
