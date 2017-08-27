@@ -185,6 +185,9 @@ OpenCV_LIB_DIR_OPT:PATH=
 //Dependencies for target
 camera_LIB_DEPENDS:STATIC=
 
+//Dependencies for target
+capture_LIB_DEPENDS:STATIC=
+
 //Value Computed by CMake
 robocar_BINARY_DIR:STATIC=/home/james/Documents/robocar
 

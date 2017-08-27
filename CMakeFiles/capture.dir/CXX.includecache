@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/james/Documents/robocar/include/camera/camera.cpp
-camera.hpp
-/home/james/Documents/robocar/include/camera/camera.hpp
+/home/james/Documents/robocar/include/capture/capture.cpp
+capture.hpp
+/home/james/Documents/robocar/include/capture/capture.hpp
 iostream
 -
 sstream
@@ -16,7 +16,7 @@ sstream
 opencv2/opencv.hpp
 -
 
-/home/james/Documents/robocar/include/camera/camera.hpp
+/home/james/Documents/robocar/include/capture/capture.hpp
 sstream
 -
 opencv2/opencv.hpp

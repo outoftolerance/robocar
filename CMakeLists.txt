@@ -9,14 +9,14 @@ include_directories(
 )
 
 
-set(CAMERA_HEADER_FILES	include/camera.hpp)
-set(CAMERA_SOURCE_FILES	include/camera.cpp)
-add_library(camera ${CAMERA_SOURCE_FILES} ${CAMERA_HEADER_FILES})
+set(CAPTURE_HEADER_FILES	include/capture/capture.hpp)
+set(CAPTURE_SOURCE_FILES	include/capture/capture.cpp)
+add_library(capture ${CAPTURE_SOURCE_FILES} ${CAPTURE_HEADER_FILES})
 
 add_executable( robocar robocar.cpp )
 target_link_libraries(
 	robocar
-	camera
+	capture
 )
 
 target_link_libraries( robocar ${OpenCV_LIBS} )

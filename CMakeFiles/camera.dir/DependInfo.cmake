@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/james/Documents/robocar/include/camera.cpp" "/home/james/Documents/robocar/CMakeFiles/camera.dir/include/camera.cpp.o"
+  "/home/james/Documents/robocar/include/camera/camera.cpp" "/home/james/Documents/robocar/CMakeFiles/camera.dir/include/camera/camera.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

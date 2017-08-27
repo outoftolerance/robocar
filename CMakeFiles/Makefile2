@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/james/Documents/robocar
 # Target rules for target CMakeFiles/robocar.dir
 
 # All Build rule for target.
-CMakeFiles/robocar.dir/all: CMakeFiles/camera.dir/all
+CMakeFiles/robocar.dir/all: CMakeFiles/capture.dir/all
 	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/depend
 	$(MAKE) -f CMakeFiles/robocar.dir/build.make CMakeFiles/robocar.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=3,4 "Built target robocar"
@@ -97,39 +97,39 @@ clean: CMakeFiles/robocar.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/camera.dir
+# Target rules for target CMakeFiles/capture.dir
 
 # All Build rule for target.
-CMakeFiles/camera.dir/all:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/depend
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=1,2 "Built target camera"
-.PHONY : CMakeFiles/camera.dir/all
+CMakeFiles/capture.dir/all:
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/depend
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=1,2 "Built target capture"
+.PHONY : CMakeFiles/capture.dir/all
 
 # Include target in all.
-all: CMakeFiles/camera.dir/all
+all: CMakeFiles/capture.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/camera.dir/rule: cmake_check_build_system
+CMakeFiles/capture.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/robocar/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/camera.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/capture.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/james/Documents/robocar/CMakeFiles 0
-.PHONY : CMakeFiles/camera.dir/rule
+.PHONY : CMakeFiles/capture.dir/rule
 
 # Convenience name for target.
-camera: CMakeFiles/camera.dir/rule
+capture: CMakeFiles/capture.dir/rule
 
-.PHONY : camera
-
-# clean rule for target.
-CMakeFiles/camera.dir/clean:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/clean
-.PHONY : CMakeFiles/camera.dir/clean
+.PHONY : capture
 
 # clean rule for target.
-clean: CMakeFiles/camera.dir/clean
+CMakeFiles/capture.dir/clean:
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/clean
+.PHONY : CMakeFiles/capture.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/capture.dir/clean
 
 .PHONY : clean
 

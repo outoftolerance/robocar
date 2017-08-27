@@ -57,38 +57,38 @@ include CMakeFiles/camera.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/camera.dir/flags.make
 
-CMakeFiles/camera.dir/include/camera.cpp.o: CMakeFiles/camera.dir/flags.make
-CMakeFiles/camera.dir/include/camera.cpp.o: include/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/camera.dir/include/camera.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camera.dir/include/camera.cpp.o -c /home/james/Documents/robocar/include/camera.cpp
+CMakeFiles/camera.dir/include/camera/camera.cpp.o: CMakeFiles/camera.dir/flags.make
+CMakeFiles/camera.dir/include/camera/camera.cpp.o: include/camera/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/camera.dir/include/camera/camera.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camera.dir/include/camera/camera.cpp.o -c /home/james/Documents/robocar/include/camera/camera.cpp
 
-CMakeFiles/camera.dir/include/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camera.dir/include/camera.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/james/Documents/robocar/include/camera.cpp > CMakeFiles/camera.dir/include/camera.cpp.i
+CMakeFiles/camera.dir/include/camera/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camera.dir/include/camera/camera.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/james/Documents/robocar/include/camera/camera.cpp > CMakeFiles/camera.dir/include/camera/camera.cpp.i
 
-CMakeFiles/camera.dir/include/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camera.dir/include/camera.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/james/Documents/robocar/include/camera.cpp -o CMakeFiles/camera.dir/include/camera.cpp.s
+CMakeFiles/camera.dir/include/camera/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camera.dir/include/camera/camera.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/james/Documents/robocar/include/camera/camera.cpp -o CMakeFiles/camera.dir/include/camera/camera.cpp.s
 
-CMakeFiles/camera.dir/include/camera.cpp.o.requires:
+CMakeFiles/camera.dir/include/camera/camera.cpp.o.requires:
 
-.PHONY : CMakeFiles/camera.dir/include/camera.cpp.o.requires
+.PHONY : CMakeFiles/camera.dir/include/camera/camera.cpp.o.requires
 
-CMakeFiles/camera.dir/include/camera.cpp.o.provides: CMakeFiles/camera.dir/include/camera.cpp.o.requires
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.o.provides.build
-.PHONY : CMakeFiles/camera.dir/include/camera.cpp.o.provides
+CMakeFiles/camera.dir/include/camera/camera.cpp.o.provides: CMakeFiles/camera.dir/include/camera/camera.cpp.o.requires
+	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera/camera.cpp.o.provides.build
+.PHONY : CMakeFiles/camera.dir/include/camera/camera.cpp.o.provides
 
-CMakeFiles/camera.dir/include/camera.cpp.o.provides.build: CMakeFiles/camera.dir/include/camera.cpp.o
+CMakeFiles/camera.dir/include/camera/camera.cpp.o.provides.build: CMakeFiles/camera.dir/include/camera/camera.cpp.o
 
 
 # Object files for target camera
 camera_OBJECTS = \
-"CMakeFiles/camera.dir/include/camera.cpp.o"
+"CMakeFiles/camera.dir/include/camera/camera.cpp.o"
 
 # External object files for target camera
 camera_EXTERNAL_OBJECTS =
 
-libcamera.a: CMakeFiles/camera.dir/include/camera.cpp.o
+libcamera.a: CMakeFiles/camera.dir/include/camera/camera.cpp.o
 libcamera.a: CMakeFiles/camera.dir/build.make
 libcamera.a: CMakeFiles/camera.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/james/Documents/robocar/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcamera.a"
@@ -100,7 +100,7 @@ CMakeFiles/camera.dir/build: libcamera.a
 
 .PHONY : CMakeFiles/camera.dir/build
 
-CMakeFiles/camera.dir/requires: CMakeFiles/camera.dir/include/camera.cpp.o.requires
+CMakeFiles/camera.dir/requires: CMakeFiles/camera.dir/include/camera/camera.cpp.o.requires
 
 .PHONY : CMakeFiles/camera.dir/requires
 

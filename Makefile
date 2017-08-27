@@ -124,44 +124,44 @@ robocar/fast:
 .PHONY : robocar/fast
 
 #=============================================================================
-# Target rules for targets named camera
+# Target rules for targets named capture
 
 # Build rule for target.
-camera: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 camera
-.PHONY : camera
+capture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 capture
+.PHONY : capture
 
 # fast build rule for target.
-camera/fast:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/build
-.PHONY : camera/fast
+capture/fast:
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/build
+.PHONY : capture/fast
 
-include/camera.o: include/camera.cpp.o
+include/capture/capture.o: include/capture/capture.cpp.o
 
-.PHONY : include/camera.o
+.PHONY : include/capture/capture.o
 
 # target to build an object file
-include/camera.cpp.o:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.o
-.PHONY : include/camera.cpp.o
+include/capture/capture.cpp.o:
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/include/capture/capture.cpp.o
+.PHONY : include/capture/capture.cpp.o
 
-include/camera.i: include/camera.cpp.i
+include/capture/capture.i: include/capture/capture.cpp.i
 
-.PHONY : include/camera.i
+.PHONY : include/capture/capture.i
 
 # target to preprocess a source file
-include/camera.cpp.i:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.i
-.PHONY : include/camera.cpp.i
+include/capture/capture.cpp.i:
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/include/capture/capture.cpp.i
+.PHONY : include/capture/capture.cpp.i
 
-include/camera.s: include/camera.cpp.s
+include/capture/capture.s: include/capture/capture.cpp.s
 
-.PHONY : include/camera.s
+.PHONY : include/capture/capture.s
 
 # target to generate assembly for a file
-include/camera.cpp.s:
-	$(MAKE) -f CMakeFiles/camera.dir/build.make CMakeFiles/camera.dir/include/camera.cpp.s
-.PHONY : include/camera.cpp.s
+include/capture/capture.cpp.s:
+	$(MAKE) -f CMakeFiles/capture.dir/build.make CMakeFiles/capture.dir/include/capture/capture.cpp.s
+.PHONY : include/capture/capture.cpp.s
 
 robocar.o: robocar.cpp.o
 
@@ -199,10 +199,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... robocar"
-	@echo "... camera"
-	@echo "... include/camera.o"
-	@echo "... include/camera.i"
-	@echo "... include/camera.s"
+	@echo "... capture"
+	@echo "... include/capture/capture.o"
+	@echo "... include/capture/capture.i"
+	@echo "... include/capture/capture.s"
 	@echo "... robocar.o"
 	@echo "... robocar.i"
 	@echo "... robocar.s"

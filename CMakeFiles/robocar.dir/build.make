@@ -90,7 +90,7 @@ robocar_EXTERNAL_OBJECTS =
 
 robocar: CMakeFiles/robocar.dir/robocar.cpp.o
 robocar: CMakeFiles/robocar.dir/build.make
-robocar: libcamera.a
+robocar: libcapture.a
 robocar: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.9
 robocar: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.9
 robocar: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.9
