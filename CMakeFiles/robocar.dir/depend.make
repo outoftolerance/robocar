@@ -3,4 +3,7 @@
 
 CMakeFiles/robocar.dir/robocar.cpp.o: include/capture/capture.hpp
 CMakeFiles/robocar.dir/robocar.cpp.o: robocar.cpp
+CMakeFiles/robocar.dir/robocar.cpp.o: src/display.cpp
+CMakeFiles/robocar.dir/robocar.cpp.o: src/lines.cpp
+CMakeFiles/robocar.dir/robocar.cpp.o: src/threshold.cpp
 

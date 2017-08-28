@@ -4,3 +4,6 @@
 CMakeFiles/robocar.dir/robocar.cpp.o
  /home/james/Documents/robocar/include/capture/capture.hpp
  /home/james/Documents/robocar/robocar.cpp
+ /home/james/Documents/robocar/src/display.cpp
+ /home/james/Documents/robocar/src/lines.cpp
+ /home/james/Documents/robocar/src/threshold.cpp

@@ -27,4 +27,22 @@ opencv2/opencv.hpp
 -
 include/capture/capture.hpp
 /home/james/Documents/robocar/include/capture/capture.hpp
+src/threshold.cpp
+/home/james/Documents/robocar/src/threshold.cpp
+src/lines.cpp
+/home/james/Documents/robocar/src/lines.cpp
+src/display.cpp
+/home/james/Documents/robocar/src/display.cpp
+
+/home/james/Documents/robocar/src/display.cpp
+opencv2/opencv.hpp
+-
+
+/home/james/Documents/robocar/src/lines.cpp
+opencv2/opencv.hpp
+-
+
+/home/james/Documents/robocar/src/threshold.cpp
+opencv2/opencv.hpp
+-
 
