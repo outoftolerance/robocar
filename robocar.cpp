@@ -14,6 +14,17 @@
 #include "src/lines.cpp"
 #include "src/display.cpp"
 
+void printHelp(void)
+{
+	std::cout << "Out Of Tolerance Robocar!" << std::endl;
+	std::cout << "\t-c\tSets input mode to camera, connects to given device id" << std::endl;
+	std::cout << "\t-x\tFrame width, sets camera width resolution" << std::endl;
+	std::cout << "\t-y\tFrame height, sets camera height resolution" << std::endl;
+	std::cout << "\t-f\tSets input mode to file, loads given filepath" << std::endl;
+	std::cout << "\t-o\tOutput flag, saves output.avi to disk" << std::endl;
+	std::cout << "\t-v\tViewing window flag, set to display outputs" << std::endl;
+}
+
 int main (int argc, char* argv[])
 {
 	Capture capture;
@@ -25,7 +36,7 @@ int main (int argc, char* argv[])
 	std::string input_file, output_file;
 
 	//figure out the command line arguments
-	while((opt = getopt(argc, argv, "c:x:y:f:ov")) != -1)
+	while((opt = getopt(argc, argv, "c:x:y:f:ovh")) != -1)
 	{
 		switch(opt)
 		{
@@ -51,14 +62,19 @@ int main (int argc, char* argv[])
 				}
 				break;
 			case 'o':
-				output_file = optarg;
+				output_file = "output.avi";
 				save_output = true;
 				break;
 			case 'v':
 				display = true;
 				break;
+			case 'h':
+				printHelp();
+				return 1;
+				break;
 			default:
 				std::cout << "Option not recognised!" << std::endl;
+				printHelp();
 				return -1;
 				break;
 		}
@@ -67,6 +83,7 @@ int main (int argc, char* argv[])
 	if(capture_type <= 0)
 	{
 		std::cout << "Capture type not set!" << std::endl;
+		printHelp();
 		return -1;
 	}
 
@@ -84,6 +101,7 @@ int main (int argc, char* argv[])
 			break;
 		default:
 			std::cout << "Capture type not recognised!" << std::endl;
+			printHelp();
 			return -1;
 			break;
 	}

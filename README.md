@@ -13,7 +13,9 @@ $ git clone http://github.com/outoftolerance/robocar
 Build
 ```sh
 $ cd robocar
-$ cmake .
+$ mkdir build
+$ cd build
+$ cmake ..
 $ make
 ```
 
