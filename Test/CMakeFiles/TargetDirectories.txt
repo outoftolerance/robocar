@@ -1,3 +1,0 @@
-/home/james/Documents/robocar/CMakeFiles/edit_cache.dir
-/home/james/Documents/robocar/CMakeFiles/rebuild_cache.dir
-/home/james/Documents/robocar/CMakeFiles/camera.dir
