@@ -20,7 +20,7 @@ $ git clone https://github.com/opencv/opencv.git
 
 OpenCV Build
 ```
-$ cd ~/Documents/opencv
+$ cd opencv
 $ mkdir build
 $ cd build
 $ cmake ..
@@ -29,7 +29,6 @@ $ make
 
 OpenCV Install
 ```
-$ cd ~/Documents/opencv/build
 $ sudo make install
 ```
 
@@ -44,6 +43,7 @@ Once OpenCV is installed the Robocar project can be built correctly as follows.
 
 Clone
 ```sh
+$ cd ~/Documents
 $ git clone http://github.com/outoftolerance/robocar
 ```
 
